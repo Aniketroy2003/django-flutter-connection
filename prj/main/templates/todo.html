@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+</head>
+<body>
+    
+    {% for i in todos %}
+    <div class="box" style="border: 2px solid black;border-radius:20px; margin:10px;text-align: center; text-wrap: wrap;">
+        <h3>{{i.title}}</h3>
+        <p>{{i.desc}}</p>
+        
+        {{i.date}}
+
+    </div>
+    
+    {% endfor %}
+</body>
+</html>
